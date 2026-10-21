@@ -26,4 +26,5 @@ jobs:
           allow-no-subscriptions: true
  
       - name: Who am I
-        run: az account show --query "{tenant: tenantId, user: user}" -o json
+        run: |
+          az account show --query "{tenant: tenantId, user: user}" -o json
